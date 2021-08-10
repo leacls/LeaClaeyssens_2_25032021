@@ -155,6 +155,11 @@ header nav a:hover
 	margin-top: 0;
 
 }
+.I
+{
+	font-weight: bold;
+	color: #0065FC;
+}
 .etoile
 {
 	color: #035FFC;
