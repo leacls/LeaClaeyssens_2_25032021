@@ -10,6 +10,7 @@ body
 	margin: 0px;
 	max-width: 1100px;
 	margin: auto;
+	padding: 15px;
 }
 
 p
@@ -62,6 +63,7 @@ h1
 	padding: 10px;
 	border: 1.5px solid #0065FC;
 	margin-left: -3px;
+	cursor: pointer;
 }
 .filtres div:first-child
 {
@@ -79,7 +81,14 @@ h1
 	padding-right: 7px;
 	font-weight: 800;
 	margin-right: 20px;
+	cursor: pointer;
 
+}
+.filtre:hover
+{
+	border-radius: 3px solid #0065FC;
+	color: #0065FC;
+	margin-top: 0;
 }
 .filtre i
 {
@@ -147,13 +156,13 @@ header nav a
 	padding: 30px 30px; 
 	margin-top:3px;
 	font-weight: 600;
+	cursor: pointer;
 }	
 header nav a:hover
 {
 	border-top: 3px solid #0065FC;
 	color: #0065FC;
 	margin-top: 0;
-
 }
 .I
 {
@@ -180,7 +189,7 @@ header nav a:hover
 	background-color: #F2F2F2;
 	padding: 20px;
 	padding-bottom: 30px;
-	margin-right: 50px;
+	margin-right: 40px;
 	border-radius: 20px;
 	width: 70%;
 	font-size: 0.9em;
@@ -207,12 +216,11 @@ header nav a:hover
 	width: 30%;
 	margin:10px;
 	padding: 5px;
-	height: 200px;
-
 }
 .marseille h3
 {
 	margin-top: 10px;
+	font-size: 1.1em;
 }
 .image
 {
@@ -262,10 +270,10 @@ header nav a:hover
 .conteneurpop
 {
 	background-color: #F2F2F2;
-	width: 30%;
+	width: 35%;
 	padding: 20px;
 	border-radius: 20px;
-	font-size: 0.9em;
+	font-size: 0.8em;
 }
 .conteneurpop h2 i
 {
@@ -279,17 +287,17 @@ header nav a:hover
 .populaire
 {
 	background-color: white;
-	/*margin: 50px 0; */
 	border-radius: 20px;
 	margin:10px;
 	padding: 5px;
 	padding-bottom: 5px;
+	height: 120px;
 }
 .popflex
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .descrip
 {
@@ -298,7 +306,7 @@ header nav a:hover
 .imagepop
 {
 	width: 100px;
-	height: 100px;
+	height: 110px;
 	background-size: cover;
 	background-position: center;
 	background-color: white;
@@ -416,6 +424,10 @@ header nav a:hover
 		width: 100%;
 		margin: 0;
 	}*/
+	body
+	{
+		padding: 0;
+	}
 	.heberpop
 	{
 		flex-wrap:wrap;
@@ -490,6 +502,21 @@ header nav a:hover
 	{
 		padding: 5% 5%;
 		width: 80%;
+	}
+	footer
+	{
+		display: flex;
+		flex-direction: column;
+		padding: 40px;
+	}
+	footer > div
+	{
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	footer > div > p
+	{
+		margin-top: 10px;
 	}
 }
 
