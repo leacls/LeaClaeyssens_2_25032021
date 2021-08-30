@@ -106,15 +106,22 @@ h2
 	padding-bottom: 10px;
 }
 
-p.info
+.info
 {
+	display: flex;
+	flex-wrap: nowrap;
 	padding: 10px;
 	font-size: 0.8em;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	align-items: center;
 }
+.info div
+	{
+		padding: 10px;
+	}
 
-p.info i
+.info i
 {
 	color:#0065FC;
 	padding: 5px;
@@ -418,23 +425,47 @@ header nav a:hover
 /* tablette */
 @media screen and (min-device-width:481px) and (max-device-width:900px)
 {
-	.filtre
+	.filtres
 	{
 		display: flex;
 		flex-wrap: wrap;
+	}
+	.heberpop
+	{
+		flex-direction: column-reverse;
+	}
+	.conteneurpop
+	{
+		border-radius: 0;
+		width: 100%;
+	}
+	.hebergements
+	{
+		width: 100%;
+		margin: 0;
+		background-color: white;
+	}
+	.conteneur
+	{
+		padding: 0;
+	}
+	.sectionpadding,.sectionmarseille
+	{
+		padding: 15px;
+	}
+	.filtre
+	{
+		margin-bottom: 5px;
 	}
 }
 
 /* mobile */
 @media screen and (max-device-width:480px) 
 {
-	/*
-	body, html, main, section
+	.sectionpadding
 	{
-		display: block;
-		width: 100%;
-		margin: 0;
-	}*/
+		padding: 15px;
+	}
 	.conteneur
 	{
 		padding: 0;
@@ -453,8 +484,8 @@ header nav a:hover
 	}
 	.conteneurpop
 	{
-		width: 100%;
 		border-radius: 0;
+		width: 100%;
 	}
 	.populaire
 	{
@@ -468,13 +499,21 @@ header nav a:hover
 		-webkit-box-shadow: -3px 1px 14px 2px rgba(0,0,0,0.15);
 		-moz-box-shadow: -3px 1px 14px 2px rgba(0,0,0,0.15);
 	}
+	.sectionmarseille h2
+	{
+		margin-left: 25px;
+	}
 	.hebergementflex
 	{
 		flex-direction: column;
 	}
+	.titrefiltre
+	{
+		width: 100%;
+	}
 	.filtres
 	{
-		display: list-item;
+		display: flex;
 		flex-wrap: wrap;
 	}
 	.filtre
@@ -487,7 +526,6 @@ header nav a:hover
 	}
 	nav
 	{
-		/*a modifier*/
 		display: flex;
 		flex-wrap: wrap-reverse;
 	}
@@ -506,6 +544,12 @@ header nav a:hover
 	{
 		width: 50%;
 		text-align: center;
+		border-bottom: 3.2px solid #F2F2F2;
+	}
+	.H:hover, .A:hover
+	{
+		border-top-color: white;
+		border-bottom-color: blue;
 	}
 	.conteneurpop h2
 	{
@@ -543,16 +587,3 @@ header nav a:hover
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
