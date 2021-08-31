@@ -90,7 +90,7 @@ h2
 }
 .filtre:hover
 {
-	border-radius: 3px solid #0065FC;
+	border: 2px solid #0065FC;
 	color: #0065FC;
 	margin-top: 0;
 }
@@ -230,6 +230,9 @@ header nav a:hover
 	width: 30%;
 	margin:10px;
 	padding: 5px;
+	box-shadow: 12px 12px 13px -7px rgba(0,0,0,0.14);
+	-webkit-box-shadow: 12px 12px 13px -7px rgba(0,0,0,0.14);
+	-moz-box-shadow: 12px 12px 13px -7px rgba(0,0,0,0.14);
 }
 .marseille h3
 {
@@ -306,6 +309,9 @@ header nav a:hover
 	padding: 5px;
 	padding-bottom: 5px;
 	height: 120px;
+	box-shadow: 12px 12px 13px -7px rgba(0,0,0,0.14);
+	-webkit-box-shadow: 12px 12px 13px -7px rgba(0,0,0,0.14);
+	-moz-box-shadow: 12px 12px 13px -7px rgba(0,0,0,0.14);
 }
 .popflex
 {
@@ -316,6 +322,7 @@ header nav a:hover
 .descrip
 {
 	height: 100px;
+
 }
 .imagepop
 {
@@ -388,6 +395,7 @@ header nav a:hover
 	padding: 5% 5%;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+	margin: -1px;
 }
 .img1
 {
@@ -423,7 +431,7 @@ header nav a:hover
 }
 
 /* tablette */
-@media screen and (min-device-width:481px) and (max-device-width:900px)
+@media screen and (min-width:481px) and (max-width:900px)
 {
 	.filtres
 	{
@@ -460,7 +468,7 @@ header nav a:hover
 }
 
 /* mobile */
-@media screen and (max-device-width:480px) 
+@media screen and (max-width:480px) 
 {
 	.sectionpadding
 	{
