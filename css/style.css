@@ -15,7 +15,7 @@
 
 p
 {
-	color: #8B8989;
+	color: black;
 }
 
 h1,h2,h3,h4,h5
@@ -32,6 +32,11 @@ h1
 h2
 {
 	font-size: 21px;
+}
+
+a
+{
+	text-decoration: none;
 }
 
 /*champ recherche*/
